@@ -78,7 +78,7 @@ var jwtMiddleware = {
     }
     ,verifyAdmin: (req, res, next) => {
 
-        if (res.locals.role == "admin") {
+        if (res.locals.role == "admin||Admin") {
     
           next();
     
